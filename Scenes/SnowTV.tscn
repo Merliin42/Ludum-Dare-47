@@ -14,5 +14,7 @@ animations = [ {
 } ]
 
 [node name="SnowTV" type="AnimatedSprite"]
+modulate = Color( 1, 1, 1, 0 )
 frames = SubResource( 1 )
+frame = 3
 playing = true
