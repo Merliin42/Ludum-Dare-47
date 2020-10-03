@@ -37,145 +37,98 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Computer" type="Label" parent="TextureRect/VBoxContainer" instance=ExtResource( 2 )]
+[node name="Computer" parent="TextureRect/VBoxContainer" instance=ExtResource( 2 )]
 visible = false
 margin_top = 19.0
 margin_right = 345.0
 margin_bottom = 54.0
 custom_fonts/font = SubResource( 1 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Use computer"
-align = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
-[node name="Kitchen" type="Label" parent="TextureRect/VBoxContainer" instance=ExtResource( 2 )]
-visible = false
-margin_top = 89.0
-margin_right = 345.0
-margin_bottom = 124.0
-custom_fonts/font = SubResource( 1 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "Use kitchen"
-align = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Shelf" type="Label" parent="TextureRect/VBoxContainer" instance=ExtResource( 2 )]
-visible = false
-margin_top = 108.0
-margin_right = 345.0
-margin_bottom = 143.0
-custom_fonts/font = SubResource( 1 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "Look at the shelf"
-align = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Banker" type="Label" parent="TextureRect/VBoxContainer" instance=ExtResource( 2 )]
-visible = false
-margin_top = 128.0
-margin_right = 345.0
-margin_bottom = 163.0
-custom_fonts/font = SubResource( 1 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "Call my banker"
-align = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Shave" type="Label" parent="TextureRect/VBoxContainer" instance=ExtResource( 2 )]
+[node name="Kitchen" parent="TextureRect/VBoxContainer" instance=ExtResource( 2 )]
 visible = false
 margin_top = 167.0
 margin_right = 345.0
 margin_bottom = 202.0
 custom_fonts/font = SubResource( 1 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "Shave myself"
-align = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
+text = "Use kitchen"
 
-[node name="Pills" type="Label" parent="TextureRect/VBoxContainer" instance=ExtResource( 2 )]
+[node name="Shelf" parent="TextureRect/VBoxContainer" instance=ExtResource( 2 )]
 visible = false
 margin_top = 186.0
 margin_right = 345.0
 margin_bottom = 221.0
 custom_fonts/font = SubResource( 1 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "Take the happy pills"
-align = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
+text = "Look at the shelf"
 
-[node name="Fireplace" type="Label" parent="TextureRect/VBoxContainer" instance=ExtResource( 2 )]
+[node name="Banker" parent="TextureRect/VBoxContainer" instance=ExtResource( 2 )]
+visible = false
+margin_top = 128.0
+margin_right = 345.0
+margin_bottom = 163.0
+custom_fonts/font = SubResource( 1 )
+text = "Call my banker"
+
+[node name="Shave" parent="TextureRect/VBoxContainer" instance=ExtResource( 2 )]
+visible = false
+margin_top = 108.0
+margin_right = 345.0
+margin_bottom = 143.0
+custom_fonts/font = SubResource( 1 )
+text = "Shave myself"
+
+[node name="Pills" parent="TextureRect/VBoxContainer" instance=ExtResource( 2 )]
+visible = false
+margin_top = 206.0
+margin_right = 345.0
+margin_bottom = 241.0
+custom_fonts/font = SubResource( 1 )
+text = "Take the happy pills"
+
+[node name="Fireplace" parent="TextureRect/VBoxContainer" instance=ExtResource( 2 )]
+visible = false
+margin_top = 128.0
+margin_right = 345.0
+margin_bottom = 163.0
+custom_fonts/font = SubResource( 1 )
+text = "Clean the fireplace"
+
+[node name="Window" parent="TextureRect/VBoxContainer" instance=ExtResource( 2 )]
 visible = false
 margin_top = 147.0
 margin_right = 345.0
 margin_bottom = 182.0
 custom_fonts/font = SubResource( 1 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "Clean the fireplace"
-align = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Window" type="Label" parent="TextureRect/VBoxContainer" instance=ExtResource( 2 )]
-visible = false
-margin_top = 167.0
-margin_right = 345.0
-margin_bottom = 202.0
-custom_fonts/font = SubResource( 1 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Fix the window"
-align = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
-[node name="Furnace" type="Label" parent="TextureRect/VBoxContainer" instance=ExtResource( 2 )]
+[node name="Furnace" parent="TextureRect/VBoxContainer" instance=ExtResource( 2 )]
 visible = false
-margin_top = 167.0
+margin_top = 225.0
 margin_right = 345.0
-margin_bottom = 202.0
+margin_bottom = 260.0
 custom_fonts/font = SubResource( 1 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Turn on the furnace"
-align = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
-[node name="Bulb" type="Label" parent="TextureRect/VBoxContainer" instance=ExtResource( 2 )]
+[node name="Bulb" parent="TextureRect/VBoxContainer" instance=ExtResource( 2 )]
 visible = false
 margin_top = 194.0
 margin_right = 345.0
 margin_bottom = 229.0
 custom_fonts/font = SubResource( 1 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Change the lightbulb"
-align = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
-[node name="Cook" type="Label" parent="TextureRect/VBoxContainer" instance=ExtResource( 2 )]
+[node name="Cook" parent="TextureRect/VBoxContainer" instance=ExtResource( 2 )]
 visible = false
 margin_top = 167.0
 margin_right = 345.0
 margin_bottom = 202.0
 custom_fonts/font = SubResource( 1 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Make something to eat"
-align = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
+
+[node name="Mary" parent="TextureRect/VBoxContainer" instance=ExtResource( 2 )]
+visible = false
+margin_top = 167.0
+margin_right = 345.0
+margin_bottom = 202.0
+custom_fonts/font = SubResource( 1 )
+text = "Call Mary"
