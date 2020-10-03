@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://icon.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/Character.gd" type="Script" id=2]
+[ext_resource path="res://Scenes/SnowTV.tscn" type="PackedScene" id=3]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -20,6 +21,9 @@ radius = 64.0
 [node name="Character" type="KinematicBody2D"]
 script = ExtResource( 2 )
 
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+
 [node name="Sprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
 
@@ -32,5 +36,9 @@ collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DetectTasks"]
 shape = SubResource( 3 )
+
+[node name="SnowTV" parent="." instance=ExtResource( 3 )]
+modulate = Color( 1, 1, 1, 0.352941 )
+frame = 1
 [connection signal="area_entered" from="DetectTasks" to="." method="_on_DetectTasks_area_entered"]
 [connection signal="area_exited" from="DetectTasks" to="." method="_on_DetectTasks_area_exited"]
