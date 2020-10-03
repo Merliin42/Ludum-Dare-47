@@ -32,18 +32,19 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 32, 32 )
+extents = Vector2( 24, 16 )
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 32, 32 )
+extents = Vector2( 24, 16 )
 
 [node name="Character" type="KinematicBody2D"]
 script = ExtResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 0, -80 )
 frames = SubResource( 1 )
-animation = "front"
-frame = 1
+animation = "back"
+frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

@@ -7,29 +7,29 @@ func _process(delta): # Cette fonction est exécutée à chaque image calculée 
 	var action_is_pressed : bool = false
 	# Ce bloc permet de prendre les input du joueur
 	if Input.is_action_pressed("ui_up"):
-		displacment.y = -1
+		displacment = Vector2(-1, -1)
 		action_is_pressed = true
 	if Input.is_action_pressed("ui_down"):
-		displacment.y = 1
+		displacment = Vector2(1, 1)
 		action_is_pressed = true
 	if Input.is_action_pressed("ui_left"):
-		displacment.x = -1
+		displacment = Vector2(-1, 1)
 		action_is_pressed = true
 	if Input.is_action_pressed("ui_right"):
-		displacment.x = 1
+		displacment = Vector2(1, -1)
 		action_is_pressed = true
 	
 	if action_is_pressed :
-		if displacment == Vector2(0, -1) or displacment == Vector2(1, -1) :
+		if displacment == Vector2(1, -1) :
 			$AnimatedSprite.play("back")
 			$AnimatedSprite.flip_h = true
-		if displacment == Vector2(1, 0) or displacment == Vector2(1, 1) :
+		if displacment == Vector2(1, 1) :
 			$AnimatedSprite.play("front")
 			$AnimatedSprite.flip_h = false
-		if displacment == Vector2(0, 1) or displacment == Vector2(-1, 1) :
+		if displacment == Vector2(-1, 1) :
 			$AnimatedSprite.play("front")
 			$AnimatedSprite.flip_h = true
-		if displacment == Vector2(-1, 0) or displacment == Vector2(-1, -1) :
+		if displacment == Vector2(-1, -1) :
 			$AnimatedSprite.play("back")
 			$AnimatedSprite.flip_h = false
 		
