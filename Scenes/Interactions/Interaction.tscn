@@ -9,7 +9,7 @@ radius = 64.0
 code = "shader_type canvas_item;
 
 void fragment() {
-	COLOR = vec4(1, 1, 1, texture(TEXTURE, UV).a);
+	COLOR = vec4(0, 0, 0, texture(TEXTURE, UV).a);
 }"
 
 [sub_resource type="ShaderMaterial" id=3]
