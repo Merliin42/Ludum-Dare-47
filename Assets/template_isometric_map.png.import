@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/template_isometric_map.png-d55100e074b0849f464de77579a2d075.stex"
+path="res://.import/template_isometric_map.png-09b099953b9473e70bdaa20b12a8ed9d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://template_isometric_map.png"
-dest_files=[ "res://.import/template_isometric_map.png-d55100e074b0849f464de77579a2d075.stex" ]
+source_file="res://Assets/template_isometric_map.png"
+dest_files=[ "res://.import/template_isometric_map.png-09b099953b9473e70bdaa20b12a8ed9d.stex" ]
 
 [params]
 
