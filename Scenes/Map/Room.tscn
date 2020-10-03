@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Assets/IndividualRoom/individual_room3.png" type="Texture" id=1]
+[ext_resource path="res://Assets/IndividualRoom/individual_room2.png" type="Texture" id=2]
+[ext_resource path="res://Assets/IndividualRoom/individual_room1.png" type="Texture" id=3]
+[ext_resource path="res://Scripts/Room.gd" type="Script" id=4]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 2 ), ExtResource( 1 ) ],
+"loop": true,
+"name": "default",
+"speed": 10.0
+} ]
+
+[node name="Room" type="StaticBody2D"]
+modulate = Color( 1, 1, 1, 0.121569 )
+collision_layer = 0
+script = ExtResource( 4 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+frame = 1
+playing = true
+
+[node name="PlayerDetect" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="PlayerDetect"]
+polygon = PoolVector2Array( 896, 184, 0, -320, -888, 192, 0, 704 )
+[connection signal="area_entered" from="PlayerDetect" to="." method="_on_PlayerDetect_area_entered"]
+[connection signal="area_exited" from="PlayerDetect" to="." method="_on_PlayerDetect_area_exited"]

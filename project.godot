@@ -19,11 +19,15 @@ config/name="Loop"
 run/main_scene="res://Scenes/Main.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+GlobalVar="*res://Scripts/GlobalVar.gd"
+
 [display]
 
 window/size/width=1920
 window/size/height=1080
-window/size/test_width=1080
+window/size/test_width=1280
 window/size/test_height=720
 window/dpi/allow_hidpi=true
 window/stretch/mode="viewport"

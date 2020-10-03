@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/template_isometric_map.png-d55100e074b0849f464de77579a2d075.stex"
+path="res://.import/SnowTV_4.png-b140ec1ecdd09d52d031d9cb6505fb95.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://template_isometric_map.png"
-dest_files=[ "res://.import/template_isometric_map.png-d55100e074b0849f464de77579a2d075.stex" ]
+source_file="res://Assets/SnowTV/SnowTV_4.png"
+dest_files=[ "res://.import/SnowTV_4.png-b140ec1ecdd09d52d031d9cb6505fb95.stex" ]
 
 [params]
 
@@ -20,9 +20,9 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
-flags/anisotropic=false
+flags/anisotropic=true
 flags/srgb=2
 process/fix_alpha_border=true
 process/premult_alpha=false
