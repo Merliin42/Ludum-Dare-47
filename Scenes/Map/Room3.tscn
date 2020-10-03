@@ -24,7 +24,7 @@ frames = SubResource( 1 )
 playing = true
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." index="3"]
-polygon = PoolVector2Array( 240, -184, 240, -192, 0, -328, -888, 176, -888, 184, 0, -320 )
+polygon = PoolVector2Array( 240, -184, 240, -192, 0, -328, -896, 176, -896, 216, 0, 736, 0, 704, -888, 184, 0, -320 )
 
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="." index="4"]
 polygon = PoolVector2Array( 336, -128, 336, -136, 896, 184, 896, 192 )
