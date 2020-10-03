@@ -63,9 +63,9 @@ text = "Look at the shelf"
 
 [node name="Banker" parent="TextureRect/VBoxContainer" instance=ExtResource( 2 )]
 visible = false
-margin_top = 128.0
+margin_top = 186.0
 margin_right = 345.0
-margin_bottom = 163.0
+margin_bottom = 221.0
 custom_fonts/font = SubResource( 1 )
 text = "Call my banker"
 
