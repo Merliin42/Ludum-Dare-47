@@ -15,5 +15,5 @@ animations = [ {
 
 [node name="SnowTV" type="AnimatedSprite"]
 frames = SubResource( 1 )
-frame = 1
+frame = 2
 playing = true

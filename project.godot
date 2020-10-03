@@ -34,6 +34,7 @@ window/stretch/aspect="keep"
 2d_physics/layer_1="Collisions"
 2d_physics/layer_2="Player"
 2d_physics/layer_3="Interactions"
+2d_physics/layer_4="Walls"
 
 [rendering]
 
