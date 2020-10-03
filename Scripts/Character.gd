@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-const VELOCITY : int = 200 # A changer pour modifier la vitesse du personnage
+const VELOCITY : int = 500 # A changer pour modifier la vitesse du personnage
 
 func _process(delta): # Cette fonction est exécutée à chaque image calculée par le moteur
 	var displacment : Vector2 = Vector2(0, 0) # Un vecteur qui illustre les input du joueur

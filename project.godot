@@ -23,7 +23,7 @@ config/icon="res://icon.png"
 
 window/size/width=1920
 window/size/height=1080
-window/size/test_width=1080
+window/size/test_width=1280
 window/size/test_height=720
 window/dpi/allow_hidpi=true
 window/stretch/mode="viewport"
@@ -34,7 +34,6 @@ window/stretch/aspect="keep"
 2d_physics/layer_1="Collisions"
 2d_physics/layer_2="Player"
 2d_physics/layer_3="Interactions"
-2d_physics/layer_4="Walls"
 
 [rendering]
 
