@@ -6,7 +6,7 @@
 
 [node name="AnimatedSprite" parent="." index="0"]
 position = Vector2( 0, 8 )
-frame = 0
+frame = 2
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." index="2"]
 polygon = PoolVector2Array( 896, 184, 896, 192, 0, -320, -888, 192, -888, 184, 0, -328 )
