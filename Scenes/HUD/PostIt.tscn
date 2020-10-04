@@ -99,6 +99,7 @@ margin_top = 225.0
 margin_right = 345.0
 margin_bottom = 260.0
 custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.67451, 0.67451, 0.67451, 1 )
 text = "Turn on the furnace"
 
 [node name="Bulb" parent="TextureRect/VBoxContainer" instance=ExtResource( 2 )]

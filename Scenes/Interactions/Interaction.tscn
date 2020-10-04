@@ -4,7 +4,7 @@
 [ext_resource path="res://Assets/Decoration/A_letter.png" type="Texture" id=2]
 
 [sub_resource type="CircleShape2D" id=1]
-radius = 64.0
+radius = 192.167
 
 [sub_resource type="Shader" id=2]
 code = "shader_type canvas_item;
@@ -22,19 +22,29 @@ collision_mask = 2
 script = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, -40 )
 shape = SubResource( 1 )
 
 [node name="Sprite2" type="Sprite" parent="."]
 visible = false
 material = SubResource( 3 )
+position = Vector2( 0, -40 )
 scale = Vector2( 1.2, 1.2 )
 
 [node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 0, -40 )
 
 [node name="ButtonIndication" type="Sprite" parent="."]
 visible = false
-position = Vector2( 0, -120 )
-scale = Vector2( 0.0910817, 0.0910817 )
+position = Vector2( 0, -290 )
+scale = Vector2( 0.151803, 0.151803 )
 texture = ExtResource( 2 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2( 0, 60 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+position = Vector2( 0, -100 )
+polygon = PoolVector2Array( -109, 42, 2, 108, 110, 42, 0, -16 )
 [connection signal="area_entered" from="." to="." method="_on_Node2D_area_entered"]
 [connection signal="area_exited" from="." to="." method="_on_Node2D_area_exited"]
