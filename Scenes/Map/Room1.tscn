@@ -32,4 +32,5 @@ polygon = PoolVector2Array( -168, -232, -8, -328, 880, 176, 880, 184, -8, 696, -
 [node name="Door" type="AnimatedSprite" parent="." index="5"]
 position = Vector2( -216, 322 )
 frames = SubResource( 1 )
+frame = 1
 playing = true
