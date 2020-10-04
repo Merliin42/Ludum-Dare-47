@@ -41,7 +41,7 @@ func _process(delta): # Cette fonction est exécutée à chaque image calculée 
 		
 	
 	else :
-		$AnimatedSprite.stop()
+		$AnimatedSprite.play("idle")
 	
 	displacment = displacment.normalized()*VELOCITY # Normalise le vecteur pour garder toujours la même vitesse et multiplie par la vélocité
 	move_and_slide(displacment) # Déplace le personnage
