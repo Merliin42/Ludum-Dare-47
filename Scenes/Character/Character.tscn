@@ -23,14 +23,14 @@
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 12 ), ExtResource( 14 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 16 ), ExtResource( 5 ), ExtResource( 13 ), ExtResource( 17 ) ],
-"loop": true,
-"name": "front",
-"speed": 8.0
-}, {
 "frames": [ ExtResource( 15 ), ExtResource( 11 ), ExtResource( 1 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 6 ) ],
 "loop": true,
 "name": "back",
+"speed": 8.0
+}, {
+"frames": [ ExtResource( 12 ), ExtResource( 14 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 16 ), ExtResource( 5 ), ExtResource( 13 ), ExtResource( 17 ) ],
+"loop": true,
+"name": "front",
 "speed": 8.0
 }, {
 "frames": [ ExtResource( 19 ), ExtResource( 18 ), ExtResource( 20 ) ],
@@ -52,7 +52,7 @@ script = ExtResource( 2 )
 position = Vector2( 0, -80 )
 frames = SubResource( 1 )
 animation = "idle"
-frame = 2
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
