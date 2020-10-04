@@ -16,3 +16,5 @@ position = Vector2( 88, 664 )
 [connection signal="task" from="World/YSort/Character" to="." method="_on_Character_task"]
 
 [editable path="World"]
+
+[editable path="World/YSort/Map"]
