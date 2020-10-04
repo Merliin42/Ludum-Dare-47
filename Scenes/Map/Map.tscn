@@ -17,3 +17,4 @@ position = Vector2( -888, -512 )
 position = Vector2( 896, -504 )
 
 [node name="Room2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 0, 0 )
