@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Scripts/Interaction.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Decoration/A_letter.png" type="Texture" id=2]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 64.0
@@ -9,7 +10,7 @@ radius = 64.0
 code = "shader_type canvas_item;
 
 void fragment() {
-	COLOR = vec4(1, 1, 1, texture(TEXTURE, UV).a);
+	COLOR = vec4(.88, .77, .18, texture(TEXTURE, UV).a);
 }"
 
 [sub_resource type="ShaderMaterial" id=3]
@@ -26,8 +27,14 @@ shape = SubResource( 1 )
 [node name="Sprite2" type="Sprite" parent="."]
 visible = false
 material = SubResource( 3 )
-scale = Vector2( 1.1, 1.1 )
+scale = Vector2( 1.2, 1.2 )
 
 [node name="Sprite" type="Sprite" parent="."]
+
+[node name="ButtonIndication" type="Sprite" parent="."]
+visible = false
+position = Vector2( 0, -120 )
+scale = Vector2( 0.0910817, 0.0910817 )
+texture = ExtResource( 2 )
 [connection signal="area_entered" from="." to="." method="_on_Node2D_area_entered"]
 [connection signal="area_exited" from="." to="." method="_on_Node2D_area_exited"]
