@@ -4,9 +4,15 @@
 
 [node name="Room0" instance=ExtResource( 1 )]
 
+[node name="Ground" parent="." index="0"]
+frame = 1
+
+[node name="WallLeft" parent="." index="1"]
+frame = 0
+
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." index="2"]
-position = Vector2( 0, 650 )
+position = Vector2( 0, 314 )
 polygon = PoolVector2Array( 896, 184, 896, 192, 0, -320, -888, 192, -888, 184, 0, -328 )
 
 [node name="WallRight" parent="." index="3"]
-frame = 2
+frame = 0

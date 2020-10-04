@@ -9,9 +9,9 @@ func _ready():
 
 
 func _on_Node2D_area_entered(area):
-	$SpriteA.visible = true
-	$ButtonIndication.visible = true
+	$Sprite2.visible = true
+	$ButtonIndicationA.visible = true
 
 func _on_Node2D_area_exited(area):
-	$SpriteA.visible = false
-	$ButtonIndication.visible = false
+	$Sprite2.visible = false
+	$ButtonIndicationA.visible = false
