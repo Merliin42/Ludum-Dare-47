@@ -16,3 +16,4 @@ texture = ExtResource( 4 )
 
 [node name="SnowTV" parent="." instance=ExtResource( 3 )]
 position = Vector2( 964, 540 )
+frame = 2

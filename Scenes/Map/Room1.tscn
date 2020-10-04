@@ -29,4 +29,4 @@ playing = true
 polygon = PoolVector2Array( -896, 184, -264, -184, -264, -192, -896, 176 )
 
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="." index="4"]
-polygon = PoolVector2Array( -168, -232, -8, -328, 888, 184, 888, 176, -8, -336, -168, -240 )
+polygon = PoolVector2Array( -168, -232, -8, -328, 880, 176, 880, 184, -8, 696, -8, 728, 888, 216, 888, 176, -8, -336, -168, -240 )
