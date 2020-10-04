@@ -1,7 +1,12 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Scripts/Interaction.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Decoration/A_letter.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Decoration/E_letter_2.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Decoration/E_letter_4.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Decoration/E_letter_3.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Decoration/E_letter_5.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Decoration/E_letter_1.png" type="Texture" id=7]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 192.167
@@ -16,6 +21,14 @@ void fragment() {
 [sub_resource type="ShaderMaterial" id=3]
 shader = SubResource( 2 )
 
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ ExtResource( 7 ), ExtResource( 3 ), ExtResource( 5 ), ExtResource( 4 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "default",
+"speed": 30.0
+} ]
+
 [node name="Interaction" type="Area2D"]
 collision_layer = 4
 collision_mask = 2
@@ -25,20 +38,26 @@ script = ExtResource( 1 )
 position = Vector2( 0, -40 )
 shape = SubResource( 1 )
 
-[node name="Sprite2" type="Sprite" parent="."]
+[node name="SpriteA" type="Sprite" parent="."]
 visible = false
 material = SubResource( 3 )
 position = Vector2( 0, -40 )
 scale = Vector2( 1.2, 1.2 )
 
-[node name="Sprite" type="Sprite" parent="."]
+[node name="SpriteE" type="Sprite" parent="."]
 position = Vector2( 0, -40 )
 
 [node name="ButtonIndication" type="Sprite" parent="."]
-visible = false
-position = Vector2( 0, -290 )
+position = Vector2( -50, -290 )
 scale = Vector2( 0.151803, 0.151803 )
 texture = ExtResource( 2 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+visible = false
+position = Vector2( 40, -290 )
+scale = Vector2( 0.142857, 0.142857 )
+frames = SubResource( 4 )
+playing = true
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2( 0, 60 )

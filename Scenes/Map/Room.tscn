@@ -46,14 +46,13 @@ __meta__ = {
 [node name="Ground" type="AnimatedSprite" parent="."]
 z_index = -1
 frames = SubResource( 1 )
-frame = 2
+frame = 1
 playing = true
 offset = Vector2( 0, 650 )
 
 [node name="WallLeft" type="AnimatedSprite" parent="."]
 z_as_relative = false
 frames = SubResource( 2 )
-frame = 1
 playing = true
 offset = Vector2( 0, 650 )
 
@@ -68,6 +67,7 @@ polygon = PoolVector2Array( 0, 704, 1768, -320, 880, -832, -888, 192 )
 [node name="WallRight" type="AnimatedSprite" parent="."]
 z_as_relative = false
 frames = SubResource( 3 )
+frame = 2
 playing = true
 offset = Vector2( 0, 650 )
 
