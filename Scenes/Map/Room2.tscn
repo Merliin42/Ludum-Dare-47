@@ -26,23 +26,27 @@ animations = [ {
 
 [node name="Room2" instance=ExtResource( 1 )]
 
-[node name="AnimatedSprite" parent="." index="0"]
-frame = 1
+[node name="Ground" parent="." index="0"]
+frame = 0
 
-[node name="AnimatedSprite2" type="AnimatedSprite" parent="." index="2"]
-position = Vector2( 384, -224 )
-frames = SubResource( 1 )
-frame = 1
-playing = true
-
-[node name="AnimatedSprite3" type="AnimatedSprite" parent="." index="3"]
-position = Vector2( -256, -304 )
-frames = SubResource( 2 )
+[node name="WallLeft" parent="." index="1"]
 frame = 2
-playing = true
 
-[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="." index="4"]
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="." index="2"]
+position = Vector2( 0, 650 )
 polygon = PoolVector2Array( -208, -208, -208, -216, 0, -328, 336, -136, 336, -128, 0, -320 )
 
-[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="." index="5"]
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="." index="3"]
+position = Vector2( 0, 650 )
 polygon = PoolVector2Array( -304, -152, -304, -160, -888, 176, -888, 224, 0, 736, 896, 224, 896, 184, 432, -88, 432, -72, 880, 184, 880, 192, 0, 704, -880, 192, -880, 184 )
+
+[node name="Door1" type="AnimatedSprite" parent="." index="5"]
+position = Vector2( 384, 426 )
+frames = SubResource( 1 )
+playing = true
+
+[node name="Door2" type="AnimatedSprite" parent="." index="6"]
+position = Vector2( -256, 346 )
+frames = SubResource( 2 )
+frame = 1
+playing = true
