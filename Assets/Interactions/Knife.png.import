@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Bulb.png-07f0fdbb264f390101478c216c46d973.stex"
+path="res://.import/Knife.png-12ba8450915fa567ebb60da977b5e2b9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Placeholder/Bulb.png"
-dest_files=[ "res://.import/Bulb.png-07f0fdbb264f390101478c216c46d973.stex" ]
+source_file="res://Assets/Interactions/Knife.png"
+dest_files=[ "res://.import/Knife.png-12ba8450915fa567ebb60da977b5e2b9.stex" ]
 
 [params]
 

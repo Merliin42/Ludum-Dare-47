@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Kitchen.png-40ce5bb01335a08d17565c475c3a6e07.stex"
+path="res://.import/Phone.png-8e2687fbe16d483be8483f95f3ed0163.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Placeholder/Kitchen.png"
-dest_files=[ "res://.import/Kitchen.png-40ce5bb01335a08d17565c475c3a6e07.stex" ]
+source_file="res://Assets/Interactions/Phone.png"
+dest_files=[ "res://.import/Phone.png-8e2687fbe16d483be8483f95f3ed0163.stex" ]
 
 [params]
 

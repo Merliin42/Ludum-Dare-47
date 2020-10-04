@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Meds.png-4583e27f93e99dc7a2b24b4d74624662.stex"
+path="res://.import/Meds.png-5b642f525008348f0d30ad789f22ff33.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Placeholder/Meds.png"
-dest_files=[ "res://.import/Meds.png-4583e27f93e99dc7a2b24b4d74624662.stex" ]
+source_file="res://Assets/Interactions/Meds.png"
+dest_files=[ "res://.import/Meds.png-5b642f525008348f0d30ad789f22ff33.stex" ]
 
 [params]
 

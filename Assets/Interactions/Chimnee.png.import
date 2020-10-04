@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Chimnee.png-45f90113a920713ade451102b4f332e0.stex"
+path="res://.import/Chimnee.png-9131abac35702be13de0778203d1729e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Placeholder/Chimnee.png"
-dest_files=[ "res://.import/Chimnee.png-45f90113a920713ade451102b4f332e0.stex" ]
+source_file="res://Assets/Interactions/Chimnee.png"
+dest_files=[ "res://.import/Chimnee.png-9131abac35702be13de0778203d1729e.stex" ]
 
 [params]
 
