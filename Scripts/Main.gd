@@ -1,7 +1,7 @@
 extends Node
 
 onready var iteration = get_node("/root/GlobalVar").iterations
-onready var tasks = ["Computer", "Kitchen", "Shelf", "Shave", "Pills", "Fireplace", "Window", "Furnace", "Bulb", "Cook"]
+onready var tasks = ["Computer", "Kitchen", "Shelf", "Shave", "Fireplace", "Furnace", "Bulb", "Cook"]
 var today_tasks = []
 
 func _ready():
