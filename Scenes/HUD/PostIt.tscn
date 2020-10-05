@@ -51,7 +51,7 @@ margin_top = 167.0
 margin_right = 345.0
 margin_bottom = 202.0
 custom_fonts/font = SubResource( 1 )
-text = "Use kitchen"
+text = "Use fridge"
 
 [node name="Shelf" parent="TextureRect/VBoxContainer" instance=ExtResource( 2 )]
 visible = false
@@ -108,14 +108,6 @@ margin_right = 345.0
 margin_bottom = 229.0
 custom_fonts/font = SubResource( 1 )
 text = "Change the lightbulb"
-
-[node name="Cook" parent="TextureRect/VBoxContainer" instance=ExtResource( 2 )]
-visible = false
-margin_top = 167.0
-margin_right = 345.0
-margin_bottom = 202.0
-custom_fonts/font = SubResource( 1 )
-text = "Make something to eat"
 
 [node name="Mary" parent="TextureRect/VBoxContainer" instance=ExtResource( 2 )]
 visible = false

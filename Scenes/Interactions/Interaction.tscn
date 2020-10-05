@@ -58,7 +58,7 @@ visible = false
 position = Vector2( 40, -290 )
 scale = Vector2( 0.142857, 0.142857 )
 frames = SubResource( 4 )
-frame = 2
+frame = 3
 playing = true
 [connection signal="area_entered" from="." to="." method="_on_Node2D_area_entered"]
 [connection signal="area_exited" from="." to="." method="_on_Node2D_area_exited"]

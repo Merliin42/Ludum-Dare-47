@@ -16,10 +16,10 @@ animations = [ {
 [node name="Room1" instance=ExtResource( 1 )]
 
 [node name="Ground" parent="." index="0"]
-frame = 2
+frame = 0
 
 [node name="WallLeft" parent="." index="1"]
-frame = 1
+frame = 2
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." index="2"]
 position = Vector2( 5.59998, 321.2 )
@@ -30,9 +30,10 @@ position = Vector2( 5.59998, 321.2 )
 polygon = PoolVector2Array( -168, -232, -8, -328, 880, 176, 880, 184, -8, 696, -8, 728, 888, 216, 888, 176, -8, -336, -168, -240 )
 
 [node name="WallRight" parent="." index="4"]
-frame = 0
+frame = 1
 
 [node name="Door" type="AnimatedSprite" parent="." index="5"]
 position = Vector2( -210.4, -6.79999 )
 frames = SubResource( 1 )
+frame = 1
 playing = true
