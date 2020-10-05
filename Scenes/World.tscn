@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=29 format=2]
 
 [ext_resource path="res://Scenes/Map/Room3.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/Character/Character.tscn" type="PackedScene" id=2]
@@ -9,11 +9,13 @@
 [ext_resource path="res://Scenes/Interactions/Interaction.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Assets/Interactions/Computer.png" type="Texture" id=8]
 [ext_resource path="res://Assets/Interactions/Bulb.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Decoration/Bed.png" type="Texture" id=10]
 [ext_resource path="res://Assets/Interactions/Shelf.png" type="Texture" id=11]
 [ext_resource path="res://Assets/Interactions/Fireplace.png" type="Texture" id=12]
 [ext_resource path="res://Assets/Interactions/Shave.png" type="Texture" id=13]
 [ext_resource path="res://Assets/Interactions/Oven.png" type="Texture" id=14]
 [ext_resource path="res://Assets/Interactions/Kitchen.png" type="Texture" id=15]
+[ext_resource path="res://Assets/Decoration/Sofa.png" type="Texture" id=16]
 [ext_resource path="res://Assets/Decoration/Bathtub.png" type="Texture" id=17]
 [ext_resource path="res://Assets/Decoration/Table.png" type="Texture" id=18]
 [ext_resource path="res://Assets/Decoration/Pillow.png" type="Texture" id=19]
@@ -24,6 +26,8 @@
 [ext_resource path="res://Assets/Decoration/Mirror.png" type="Texture" id=24]
 [ext_resource path="res://Assets/Decoration/Desk.png" type="Texture" id=25]
 [ext_resource path="res://Assets/Decoration/Chair.png" type="Texture" id=26]
+[ext_resource path="res://Assets/Decoration/rasoir.png" type="Texture" id=27]
+[ext_resource path="res://Assets/Decoration/Knife.png" type="Texture" id=28]
 
 [node name="World" type="Node2D"]
 script = ExtResource( 5 )
@@ -31,6 +35,7 @@ script = ExtResource( 5 )
 [node name="Collisions" type="StaticBody2D" parent="."]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Collisions"]
+position = Vector2( 48, -152 )
 polygon = PoolVector2Array( -648, 272, -584, 272, -584, 296, -648, 296 )
 
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Collisions"]
@@ -73,12 +78,39 @@ polygon = PoolVector2Array( 2072, -752, 2184, -816, 2088, -880, 1968, -808 )
 position = Vector2( -1680, 328 )
 polygon = PoolVector2Array( 2280, -200, 2392, -136, 2472, -184, 2360, -256 )
 
+[node name="CollisionPolygon2D14" type="CollisionPolygon2D" parent="Collisions"]
+position = Vector2( -1680, 328 )
+polygon = PoolVector2Array( 1672, 336, 1904, 208, 1784, 128, 1568, 248 )
+
+[node name="CollisionPolygon2D15" type="CollisionPolygon2D" parent="Collisions"]
+position = Vector2( -1680, 328 )
+polygon = PoolVector2Array( 2088, -1336, 1960, -1416, 2040, -1456, 2168, -1384 )
+
+[node name="CollisionPolygon2D16" type="CollisionPolygon2D" parent="Collisions"]
+position = Vector2( -1680, 328 )
+polygon = PoolVector2Array( 2744, -488, 2864, -432, 2968, -496, 2848, -560 )
+
 [node name="YSort" type="YSort" parent="."]
 
 [node name="Character" parent="YSort" instance=ExtResource( 2 )]
 position = Vector2( 0, 448 )
 
 [node name="Decorations" type="YSort" parent="YSort"]
+
+[node name="rasoir" type="Sprite" parent="YSort/Decorations"]
+position = Vector2( -440, -504 )
+texture = ExtResource( 27 )
+offset = Vector2( 0, -96 )
+
+[node name="Knife" type="Sprite" parent="YSort/Decorations"]
+position = Vector2( 1192, -240 )
+texture = ExtResource( 28 )
+offset = Vector2( 0, -16 )
+
+[node name="Table2" type="Sprite" parent="YSort/Decorations"]
+position = Vector2( 1064, -248 )
+texture = ExtResource( 18 )
+offset = Vector2( 112, 40 )
 
 [node name="Mirror" type="Sprite" parent="YSort/Decorations"]
 position = Vector2( -376, -664 )
@@ -119,9 +151,20 @@ position = Vector2( 696, 24 )
 texture = ExtResource( 20 )
 
 [node name="Chair" type="Sprite" parent="YSort/Decorations"]
-position = Vector2( -616, 280 )
+position = Vector2( -568, 120 )
 texture = ExtResource( 26 )
 offset = Vector2( 0, -48 )
+
+[node name="Bed" type="Sprite" parent="YSort/Decorations"]
+position = Vector2( -104, 544 )
+texture = ExtResource( 10 )
+offset = Vector2( 152, -8 )
+flip_h = true
+
+[node name="Sofa" type="Sprite" parent="YSort/Decorations"]
+position = Vector2( 280, -1088 )
+texture = ExtResource( 16 )
+offset = Vector2( 112, -40 )
 
 [node name="Rooms" type="YSort" parent="YSort"]
 __meta__ = {
@@ -160,7 +203,7 @@ texture = ExtResource( 9 )
 flip_h = true
 
 [node name="ButtonIndicationE" parent="YSort/Interactions/Bulb" index="4"]
-frame = 2
+frame = 3
 
 [node name="Fireplace" parent="YSort/Interactions" instance=ExtResource( 7 )]
 position = Vector2( -320, -1200 )
@@ -187,7 +230,7 @@ position = Vector2( 24, -808 )
 texture = ExtResource( 22 )
 
 [node name="ButtonIndicationE" parent="YSort/Interactions/Mary" index="4"]
-frame = 2
+frame = 3
 
 [editable path="YSort/Interactions/Bulb"]
 

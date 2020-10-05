@@ -1,7 +1,9 @@
 extends KinematicBody2D
 
+onready var iteration = get_node("/root/GlobalVar").iterations
 const VELOCITY : int = 500 # A changer pour modifier la vitesse du personnage
 signal task(task_name)
+signal suicide
 var task_name : String
 
 func _process(delta): # Cette fonction est exécutée à chaque image calculée par le moteur
@@ -24,6 +26,9 @@ func _process(delta): # Cette fonction est exécutée à chaque image calculée 
 	if Input.is_action_just_pressed("ui_task"):
 		if task_name != "" :
 			emit_signal("task", task_name)
+	if Input.is_action_just_pressed("ui_suicide"):
+		if iteration >= 4 :
+			emit_signal("suicide")
 	
 	if action_is_pressed :
 		if displacment == Vector2(1, -1) :

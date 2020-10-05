@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Degré I Mix.wav-f19d1c7b5a184bf6532171954cff1caf.sample"
+
+[deps]
+
+source_file="res://Assets/Music/Degré I Mix.wav"
+dest_files=[ "res://.import/Degré I Mix.wav-f19d1c7b5a184bf6532171954cff1caf.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0

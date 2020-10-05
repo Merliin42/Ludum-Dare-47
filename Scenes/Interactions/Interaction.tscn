@@ -9,7 +9,7 @@
 [ext_resource path="res://Assets/Buttons/E_letter_1.png" type="Texture" id=7]
 
 [sub_resource type="CircleShape2D" id=1]
-radius = 192.167
+radius = 224.143
 
 [sub_resource type="Shader" id=2]
 code = "shader_type canvas_item;
@@ -58,7 +58,6 @@ visible = false
 position = Vector2( 40, -290 )
 scale = Vector2( 0.142857, 0.142857 )
 frames = SubResource( 4 )
-frame = 3
 playing = true
 [connection signal="area_entered" from="." to="." method="_on_Node2D_area_entered"]
 [connection signal="area_exited" from="." to="." method="_on_Node2D_area_exited"]
