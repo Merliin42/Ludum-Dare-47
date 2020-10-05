@@ -14,7 +14,7 @@
 [ext_resource path="res://Assets/Interactions/Fireplace.png" type="Texture" id=12]
 [ext_resource path="res://Assets/Interactions/Shave.png" type="Texture" id=13]
 [ext_resource path="res://Assets/Interactions/Oven.png" type="Texture" id=14]
-[ext_resource path="res://Assets/Interactions/Kitchen.png" type="Texture" id=15]
+[ext_resource path="res://Assets/Interactions/Fridge.png" type="Texture" id=15]
 [ext_resource path="res://Assets/Decoration/Sofa.png" type="Texture" id=16]
 [ext_resource path="res://Assets/Decoration/Bathtub.png" type="Texture" id=17]
 [ext_resource path="res://Assets/Decoration/Table.png" type="Texture" id=18]
@@ -34,11 +34,8 @@ script = ExtResource( 5 )
 
 [node name="Collisions" type="StaticBody2D" parent="."]
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Collisions"]
-position = Vector2( 48, -152 )
-polygon = PoolVector2Array( -648, 272, -584, 272, -584, 296, -648, 296 )
-
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Collisions"]
+position = Vector2( 208, -136 )
 polygon = PoolVector2Array( -784, 216, -656, 144, -720, 104, -848, 176 )
 
 [node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="Collisions"]
@@ -121,12 +118,12 @@ position = Vector2( -888, -824 )
 texture = ExtResource( 17 )
 
 [node name="DeskLamp" type="Sprite" parent="YSort/Decorations"]
-position = Vector2( -704, 120 )
+position = Vector2( -498.5, -10.5 )
 texture = ExtResource( 21 )
 offset = Vector2( -8, -104 )
 
 [node name="Desk" type="Sprite" parent="YSort/Decorations"]
-position = Vector2( -752, 120 )
+position = Vector2( -546.5, -10.5 )
 texture = ExtResource( 25 )
 
 [node name="Pillow" type="Sprite" parent="YSort/Decorations"]
@@ -187,7 +184,7 @@ position = Vector2( 8, -320 )
 [node name="Interactions" type="YSort" parent="YSort"]
 
 [node name="Computer" parent="YSort/Interactions" instance=ExtResource( 7 )]
-position = Vector2( -776, 128 )
+position = Vector2( -570.5, -2.5 )
 texture = ExtResource( 8 )
 
 [node name="Bulb" parent="YSort/Interactions" instance=ExtResource( 7 )]
@@ -203,7 +200,7 @@ texture = ExtResource( 9 )
 flip_h = true
 
 [node name="ButtonIndicationE" parent="YSort/Interactions/Bulb" index="4"]
-frame = 3
+frame = 1
 
 [node name="Fireplace" parent="YSort/Interactions" instance=ExtResource( 7 )]
 position = Vector2( -320, -1200 )
@@ -230,7 +227,7 @@ position = Vector2( 24, -808 )
 texture = ExtResource( 22 )
 
 [node name="ButtonIndicationE" parent="YSort/Interactions/Mary" index="4"]
-frame = 3
+frame = 1
 
 [editable path="YSort/Interactions/Bulb"]
 
