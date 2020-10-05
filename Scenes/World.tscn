@@ -19,7 +19,7 @@
 [ext_resource path="res://Assets/Decoration/Pillow.png" type="Texture" id=19]
 [ext_resource path="res://Assets/Decoration/Wardrobe.png" type="Texture" id=20]
 [ext_resource path="res://Assets/Decoration/DeskLamp.png" type="Texture" id=21]
-[ext_resource path="res://Assets/Decoration/Phone.png" type="Texture" id=22]
+[ext_resource path="res://Assets/Interactions/Phone.png" type="Texture" id=22]
 [ext_resource path="res://Assets/Decoration/Toilet.png" type="Texture" id=23]
 [ext_resource path="res://Assets/Decoration/Mirror.png" type="Texture" id=24]
 [ext_resource path="res://Assets/Decoration/Desk.png" type="Texture" id=25]
@@ -160,7 +160,7 @@ texture = ExtResource( 9 )
 flip_h = true
 
 [node name="ButtonIndicationE" parent="YSort/Interactions/Bulb" index="4"]
-frame = 0
+frame = 2
 
 [node name="Fireplace" parent="YSort/Interactions" instance=ExtResource( 7 )]
 position = Vector2( -320, -1200 )
@@ -182,4 +182,13 @@ texture = ExtResource( 13 )
 position = Vector2( 48, -256 )
 texture = ExtResource( 11 )
 
+[node name="Mary" parent="YSort/Interactions" instance=ExtResource( 7 )]
+position = Vector2( 24, -808 )
+texture = ExtResource( 22 )
+
+[node name="ButtonIndicationE" parent="YSort/Interactions/Mary" index="4"]
+frame = 2
+
 [editable path="YSort/Interactions/Bulb"]
+
+[editable path="YSort/Interactions/Mary"]

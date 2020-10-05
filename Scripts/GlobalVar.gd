@@ -1,3 +1,3 @@
 extends Node
 
-var iterations : int = 0
+var iterations : int = 1

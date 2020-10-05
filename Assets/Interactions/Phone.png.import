@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Phone.png-81cc7601c6bb05632af561b0e3c82f9e.stex"
+path="res://.import/Phone.png-8e2687fbe16d483be8483f95f3ed0163.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Decoration/Phone.png"
-dest_files=[ "res://.import/Phone.png-81cc7601c6bb05632af561b0e3c82f9e.stex" ]
+source_file="res://Assets/Interactions/Phone.png"
+dest_files=[ "res://.import/Phone.png-8e2687fbe16d483be8483f95f3ed0163.stex" ]
 
 [params]
 
