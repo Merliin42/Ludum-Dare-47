@@ -13,6 +13,7 @@ modulate = Color( 0, 0, 0, 1 )
 [node name="HUD" parent="." instance=ExtResource( 2 )]
 
 [node name="Tween" type="Tween" parent="."]
+[connection signal="suicide" from="World/YSort/Character" to="." method="_on_Character_suicide"]
 [connection signal="task" from="World/YSort/Character" to="." method="_on_Character_task"]
 [connection signal="tween_completed" from="Tween" to="." method="_on_Tween_tween_completed"]
 
