@@ -30,10 +30,21 @@
 [node name="World" type="Node2D"]
 script = ExtResource( 5 )
 
+[node name="Collisions" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Collisions"]
+polygon = PoolVector2Array( -648, 272, -584, 272, -584, 296, -648, 296 )
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Collisions"]
+polygon = PoolVector2Array( -784, 216, -656, 144, -720, 104, -848, 176 )
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="Collisions"]
+polygon = PoolVector2Array( -64, -272, 96, -184, 160, -224, 0, -312 )
+
 [node name="YSort" type="YSort" parent="."]
 
 [node name="Character" parent="YSort" instance=ExtResource( 2 )]
-position = Vector2( 392, 176 )
+position = Vector2( 0, 448 )
 
 [node name="Decorations" type="YSort" parent="YSort"]
 
@@ -75,6 +86,11 @@ flip_h = true
 position = Vector2( 696, 24 )
 texture = ExtResource( 20 )
 
+[node name="Chair" type="Sprite" parent="YSort/Decorations"]
+position = Vector2( -616, 280 )
+texture = ExtResource( 26 )
+offset = Vector2( 0, -48 )
+
 [node name="Rooms" type="YSort" parent="YSort"]
 
 [node name="Room0" parent="YSort/Rooms" instance=ExtResource( 3 )]
@@ -94,10 +110,6 @@ position = Vector2( 0, -320 )
 [node name="Computer" parent="YSort/Interactions" instance=ExtResource( 7 )]
 position = Vector2( -776, 128 )
 texture = ExtResource( 8 )
-
-[node name="Chair" type="Sprite" parent="YSort/Interactions/Computer"]
-position = Vector2( 96, 64 )
-texture = ExtResource( 26 )
 
 [node name="Bulb" parent="YSort/Interactions" instance=ExtResource( 7 )]
 position = Vector2( 552, -1072 )
